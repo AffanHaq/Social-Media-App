@@ -242,8 +242,8 @@ header .container-1 .profile-data{
 
 
 .profile-data .upload-cover{
-    position: fixed;
-    right: 10rem;
+    position: absolute;
+    right: 1rem;
 }
 
 
@@ -258,3 +258,31 @@ hr {
 }
 
 
+.create-post{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background:var(--color-white) ;
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--border-radius);
+}
+
+.create-post input[type="text"]{
+    justify-self: start;
+    width: 100%;
+    height: 10rem;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+    margin-right: 1rem;
+    word-wrap: break-word;
+}
+
+.profile-photo{
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
