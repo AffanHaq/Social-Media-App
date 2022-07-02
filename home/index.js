@@ -16,11 +16,21 @@ const Bg1 = document.querySelector('.bg-1');
 const Bg2 = document.querySelector('.bg-2');
 const Bg3 = document.querySelector('.bg-3');
 
+const privacy = document.querySelectorAll("#post-privacy");
+
 //COMMENT
 const comments = document.querySelector('#comments');
 const comment = document.querySelector('.comment-thread');
-var commentflag = true;
+var commentflag = false;
 
+//POST IMAGE UPLOAD
+const uploaderModal = document.querySelector(".post-image-upload-after");
+const uploaderButton = document.querySelector(".uploader-Icon");
+var uploaderFlag = false;
+
+//POST MODAL
+const postModal = document.querySelector(".post-modal");
+const postModalButton = document.querySelector(".post-Modal-Open");
 
 //remove active class from all menu items
 const changeActiveItem = () => {
@@ -95,6 +105,24 @@ const removeSizeSelector = () => {
     })
 }
 
+//POST MODAL
+
+const OpenPostModal = () => {
+    postModal.style.display = "grid";
+}
+
+const closePostModal = (e) => {
+    if(e.target.classList.contains('post-modal')){
+        postModal.style.display = 'none';
+        closeUploader();
+    }
+}
+
+postModal.addEventListener('click', closePostModal);
+
+postModalButton.addEventListener('click', OpenPostModal);
+
+
 // COMMENTS
 
 const commentText = comments.innerHTML;
@@ -110,15 +138,36 @@ const CloseComment = () =>{
 }
 
 comments.addEventListener('click',() =>{
-    if(commentflag){
+    if(!commentflag){
         OpenComment();
-        commentflag = false;    
+        commentflag = true;    
     }
     else{
         CloseComment();
-        commentflag = true;
+        commentflag = false;
     }
 });
+
+//IMAGE UPLOADER
+
+const openUploader = () =>{
+    uploaderModal.style.display = "flex";
+}
+
+const closeUploader = () =>{
+    uploaderModal.style.display = "none";
+}
+
+uploaderButton.addEventListener('click', () =>{
+    if(!uploaderFlag){
+        openUploader();
+        uploaderFlag = true;
+    }
+    else{
+        closeUploader();
+        uploaderFlag = false;
+    }
+})
 
 // FONT SIZES
 
@@ -205,6 +254,7 @@ const changeBG = () => {
     root.style.setProperty('--light-color-lightness', lightColorLightness);
     root.style.setProperty('--white-color-lightness', whiteColorLightness);
     root.style.setProperty('--dark-color-lightness', darkColorLightness);
+    document.getElementById("post-privacy").style.color = "white";
 }
 
 Bg2.addEventListener('click', () => {
