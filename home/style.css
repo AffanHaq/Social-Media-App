@@ -769,6 +769,41 @@ main .container .right{
 }
 
 
+/* ====================== POST MODAL ========================== */
+
+.post-modal{
+    background: rgba(255,255,255,0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* text-align: center; */
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+    /* display: none; */
+}
+
+.post-modal .card{
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 50%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
+
+.post-modal .card h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.post-modal .card hr{
+    width: 100%;
+    border: inset 1px var(--color-gray);
+}
+
 /* MEDIA QUERIRIES */
 
 @media screen and (max-width: 1200px){
