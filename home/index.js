@@ -38,6 +38,11 @@ const storyView = document.querySelector(".stories");
 var closeButtonStory = false;
 const storyButton = document.querySelector(".action-story")
 
+// CHAT BOX
+const chatBottom = document.querySelector(".message-bottom")
+const chatBox = document.querySelector(".chat-box")
+const minimizeChat = document.querySelector(".close-chat")
+
 //remove active class from all menu items
 const changeActiveItem = () => {
     menuItems.forEach(item => {
@@ -88,6 +93,16 @@ const searchMessage = () => {
  
 messageSearch.addEventListener('keyup', searchMessage);
 
+// CHAT BOX
+const openChatBox = () => {
+    chatBox.style.display = "block";
+}
+const minimizeChatBox = () =>{
+    chatBox.style.display = "none";
+}
+
+chatBottom.addEventListener('click', openChatBox);
+minimizeChat.addEventListener('click', minimizeChatBox);
 
 //THEME CUSTOMIZATION
 

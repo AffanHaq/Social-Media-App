@@ -87,6 +87,13 @@ img{
     color: var(--color-gray);
 }
 
+.text-muted-small{
+    color: var(--color-gray);
+    font-size: x-small;
+}
+
+
+
 
 /* NAVBAR */
 
@@ -611,6 +618,70 @@ main .container .right{
     gap: 1rem;
 }
 
+/* CHATBOX */
+.chat-box{
+    background: var(--color-white);
+    padding: 0;
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+    width: 50%;
+    position: fixed;
+    bottom: 0px;
+    right: 5rem;
+    width: 20%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 40%);
+    display: none;
+}
+
+.chat-card{
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+
+}
+.chat-box i{
+    color: white;
+    margin-bottom: 20px;
+}
+.chat-card .head{
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-primary);
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    color: var(--color-white);
+}
+.head .user-name{
+    margin-top: 10px;
+}
+
+.chat-box .chat{
+    padding: var(--card-padding);
+}
+
+.chat .chat-messages .send{
+    text-align: right;
+    padding: 4px;
+}
+
+.chat .chat-messages .recieve{
+    text-align: left;
+}
+
+.send-message{
+    border: 2px var(--color-primary) solid;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+.send-message textarea{
+    resize: none;
+    width: 100%;
+    color: var(--color-primary);
+    background: var(--color-white);
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: var(--card-padding);
+}
 
 
 /* ====================== THEME CUSTOMIZATION ========================= */
@@ -943,6 +1014,23 @@ main .container .right{
 .image-container i{
     font-size: 4rem;
 }
+
+.message-bottom{
+    position: fixed;
+    right: 5rem;
+    bottom: 0px;
+    background: var(--color-primary);
+    padding: 0.3rem 4rem 0.3rem 4rem;
+    border: 1 solid var(--color-white);
+    border-radius: 10px;
+    color: white;
+    opacity: 0.2;
+}
+
+.message-bottom:hover{
+    opacity: 1;
+}
+
 
 /* MEDIA QUERIRIES */
 
