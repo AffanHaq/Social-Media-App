@@ -768,7 +768,63 @@ main .container .right{
     margin-right: 1rem; 
 }
 
+/* ===================== STORIES MODAL ======================== */
 
+.stories-modal{
+    background: rgba(0,0,0,0.8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    place-items: center;
+    font-size: 0.9rem;
+}
+
+.stories-modal .story-card{
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 25rem;
+    height: 38rem;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    position: relative;
+}
+
+.story-card .story-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.story-card .story-head i:hover{
+   font-size: 1.3rem;
+   color: var(--color-primary);
+}
+
+.story-card .story-view{
+    width: 100%; 
+    display: grid;
+    place-items: center;
+}
+
+.story-card .story-view img{
+    border: 2px solid var(--color-primary);
+    border-radius: 20px;
+    width: 90%;
+}
+
+.story-head .profile-image{
+    width: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.story-head .first{
+    color: var(--color-primary);
+}
 /* ====================== POST MODAL ========================== */
 
 .post-modal{

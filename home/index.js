@@ -32,6 +32,12 @@ var uploaderFlag = false;
 const postModal = document.querySelector(".post-modal");
 const postModalButton = document.querySelector(".post-Modal-Open");
 
+// STORY MODAL
+const storyModal = document.querySelector(".stories-modal");
+const storyView = document.querySelector(".stories");
+var closeButtonStory = false;
+const storyButton = document.querySelector(".action-story")
+
 //remove active class from all menu items
 const changeActiveItem = () => {
     menuItems.forEach(item => {
@@ -122,6 +128,27 @@ postModal.addEventListener('click', closePostModal);
 
 postModalButton.addEventListener('click', OpenPostModal);
 
+
+// STORIES MODAL
+
+const openStories = () => {
+    storyModal.style.display = "grid";
+}
+
+const closeStoryModal = (e) =>{
+    closeButtonStory = true;
+    if(e.target.classList.contains('stories-modal')){
+        storyModal.style.display = "none";
+    }
+    else if(closeButtonStory){
+        storyModal.style.display = "none";
+    }
+}
+
+storyView.addEventListener('click', openStories);
+
+storyButton.addEventListener('click',closeStoryModal)
+storyModal.addEventListener('click', closeStoryModal);
 
 // COMMENTS
 
