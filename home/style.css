@@ -896,6 +896,40 @@ main .container .right{
 .story-head .first{
     color: var(--color-primary);
 }
+
+/* =================== SEARCH FRIEND ========================= */
+
+.search-friend-card{
+    background: var(--color-white);
+    position: fixed;
+    top: 10%;
+    left: 29%;
+    z-index: 100;
+    width: 34.4%;
+    padding: var(--card-padding);
+    border-bottom-left-radius: var(--card-border-radius);
+    border-bottom-right-radius: var(--card-border-radius);
+    box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+    display: none;
+}
+
+.list-suggestion-friend li{
+    display: flex;
+    gap: 4rem;
+    border: 1px solid var(--color-gray);
+    border-radius: var(--card-border-radius);
+    padding-left: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.list-suggestion-friend li:hover{
+    background: var(--color-primary);
+    opacity: 0.8;
+}
+
+
+
+
 /* ====================== POST MODAL ========================== */
 
 .post-modal{
