@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages</title>
+    <link rel="stylesheet" href="chat.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h2 class="log">Home</h2>
+        <div class="search-bar">
+          <i class="uil uil-search"></i>
+          <input
+            type="search"
+            placeholder="Search for creators, inpirations and projects"
+          />
+        </div>
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">Create</label>
+          <div class="profile-photo">
+            <img src="../images/profile-1.jpg" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+
+    <main>
+        <div class="container">
+            <!-- =================== LEFT - FRIEND LIST ================================ -->
+            <div class="left">
+                <div class="messages">
+                    <div class="heading">
+                      <h2>Messages</h2>
+                      <i class="uil uil-edit"></i>
+                    </div>
+                    <!-- ========== Search Bar =========== -->
+                    <div class="search-bar">
+                      <i class="uil uil-search"></i>
+                      <input
+                        type="search"
+                        id="message-search"
+                        placeholder="Search meassages"
+                      />
+                    </div>
+
+                    <div class="left-messages">
+                        <!-- ============= Message ============ -->
+                    <div class="message">
+                        <div class="profile-photo">
+                          <img src="../images/profile-17.jpg" />
+                        </div>
+                        <div class="message-body">
+                          <h5>Peter Parker</h5>
+                          <p class="text-muted">Just woke up</p>
+                        </div>
+                      </div>
+          
+                      <!-- ============= Message ============ -->
+                      <div class="message">
+                        <div class="profile-photo">
+                          <img src="../images/profile-11.jpg" />
+                          <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                          <h5>Vision</h5>
+                          <p class="text-muted">Let's grab coffe, Sweetie</p>
+                        </div>
+                      </div>
+          
+                      <!-- ============= Message ============ -->
+                      <div class="message">
+                        <div class="profile-photo">
+                          <img src="../images/profile-12.jpg" />
+                        </div>
+                        <div class="message-body">
+                          <h5>Thanos</h5>
+                          <p class="text-bold">2 new messages</p>
+                        </div>
+                      </div>
+          
+                      <!-- ============= Message ============ -->
+                      <div class="message">
+                        <div class="profile-photo">
+                          <img src="../images/profile-14.jpg" />
+                        </div>
+                        <div class="message-body">
+                          <h5>Dr. Doom</h5>
+                          <p class="text-bold">Wanna hangout?</p>
+                        </div>
+                      </div>
+          
+                      <!-- ============= Message ============ -->
+                      <div class="message">
+                        <div class="profile-photo">
+                          <img src="../images/profile-18.jpg" />
+                          <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                          <h5>Dr. Steven Strange</h5>
+                          <p class="text-muted">Things just got out of hands!</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <!-- ========= END OF MESSAGE -->
+        
+            </div>
+
+            <!-- =================== RIGHT - MESSAGE BOX ================================ -->
+
+            <div class="right">
+                <div class="chat-card">
+                    <div class="chat-box-head">
+                        <div class="profile-photo">
+                            <img src="../images/profile-17.jpg" />
+                          </div>
+                          <div class="message-body">
+                            <h2>Peter Parker</h2>
+                          </div>
+                    </div>
+                    <div class="chat-box-message">
+                        <div class="chat-box-messages">
+                            <div class="message sent">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, eos!
+                            </div>
+                            <div class="message recieve">
+                                amet consectetur adipisicing elit. Nihil, eos!
+                            </div>
+                            <div class="message sent">
+                                Lorem ipsum dolor sit, amet consectetur adipisicingeos!
+                            </div>
+                            <div class="message recieve">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing 
+                            </div>
+                            <div class="message sent">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, eos!
+                            </div>
+                            <div class="message sent">
+                                Lorem ipsum dolor sit!
+                            </div>
+                            <div class="message recieve">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, eos!
+                            </div>
+                        </div>
+                        <div class="chat-box-send">
+                            <textarea name="send-message" placeholder="Aa"></textarea>
+                            <span><i class="uil uil-heart"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
