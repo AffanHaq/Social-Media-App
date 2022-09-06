@@ -44,23 +44,16 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
-.container-1{
-    width: 80%;
-    margin: 0 auto;
-    background: var(--color-white);
-    border-radius: 10px;
-}
-
-/* .profile-photo{
+.profile-photo{
     width: 2.7rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
-} */
+}
 
 img{
     display: block;
@@ -94,6 +87,18 @@ img{
     color: var(--color-gray);
 }
 
+.text-muted-small{
+    color: var(--color-gray);
+    font-size: x-small;
+}
+
+/* MAIN */
+main{
+    position: relative;
+    top: 5.4rem;
+}
+
+
 
 /* NAVBAR */
 
@@ -104,29 +109,6 @@ nav{
     position: fixed;
     top: 0;
     z-index: 10;
-}
-
-nav .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-}
-
-nav .create{
-    display: flex;
-    font-size: 1.5rem;
-}   
-
-nav span i{
-    padding-left: 1rem;
-}
-
-nav span i:hover{
-    color: var(--color-primary);
-}
-
-nav .log:hover{
-    color: var(--color-primary);
 }
 
 nav .container{
@@ -153,140 +135,13 @@ nav .container{
     color: var(--color-gray);
 }
 
-/* HEADER */
-
-header{
-    position: relative;
-    top: 5.4rem;
-}
-
-.container-1 .cover{
-    position: relative;
-    height: 17rem;
-}
-
-.container-1 .cover img{
-   width: 100%;
-   height: 20rem;
-   border-radius: 1.5rem;
-}
-
-/* -------------------------------- HEADER PROFILE DATA --------------------- */
-
-header .container-1 .profile-data{
-    /* top: 5.4rem; */
-    display: grid;
-    grid-template-columns: 18vw auto 20vw; 
-    column-gap: 2rem;
-    position: relative;
-    /* background: yellow; */
-}
-
-/* ------------------------------------- 1 --------------------------- */
-
-.container-1 .profile-data .profile-photo{
-    width: 14rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    border: 5px solid var(--color-white);
-    height: max-content;
-    position: sticky;
-    top: var(--sticky-top-left);
-    /* display: none; */
-}
-
-
-/* ---------------------------------- 2 --------------------------- */
-
-.profile-bio{
-    height: max-content;
-    position: sticky;
-    top: var(--sticky-top-left);
-}
-
-.profile-bio .name{
-    font-size: 2rem;
-}
-
-.profile-bio .friends.profile{
-    font-size: 1rem;
-}
-
-.profile-bio .liked-by{
-    display: flex;
-}
-
-.profile-bio .liked-by span{
-    width: 2rem;
-    height: 2rem;
-    display: block;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid var(--color-white);
-    margin-left: -0.6rem;
-}
-
-.profile-bio .liked-by span:first-child{
-    margin: 0;
-}
-
-/* -------------------------------------------- 3------------------------------ */
-
-.profile-data .profile-action{
-    height: max-content;
-    top: 5.4rem;
-    bottom: 0;
-}
-
-
-.profile-data .upload-cover{
-    position: absolute;
-    right: 1rem;
-}
-
-
-hr {
-    display: block;
-    margin-top: 5.5rem;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.2px inset var(--color-gray);
-    width: 70%;
-}
-
-
-.create-post{
-    width: 100%;
+nav .create{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-    background:var(--color-white) ;
-    padding: 0.4rem var(--card-padding);
-    border-radius: var(--border-radius);
+    gap: 2rem;
 }
 
-.create-post input[type="text"]{
-    justify-self: start;
-    width: 100%;
-    height: 10rem;
-    padding-left: 1rem;
-    background: transparent;
-    color: var(--color-dark);
-    margin-right: 1rem;
-    word-wrap: break-word;
-}
-
-.profile-photo{
-    width: 2.7rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
+/* BOOKMARKED FEED */
 
 .feed{
     background: var(--color-white);
@@ -352,3 +207,16 @@ hr {
     margin-left: 0.5rem;
 }
 
+.bookmarked-posts{
+    display: flex;
+    gap: 2rem;
+}
+
+.uil-bookmark-full{
+    color: var(--color-success);
+}
+
+.bookmark-head-heading{
+    position: relative;
+    left: 4rem;
+}

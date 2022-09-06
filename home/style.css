@@ -246,6 +246,42 @@ position: relative;
     padding: 1rem 0;
 }
 
+/* PROFILE OPTIONS */
+
+.profile-option-card{
+    position: absolute;
+    top: 2.7rem;
+    width: 10rem;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    z-index: 8;
+    left: 89%;
+}
+
+.profile-option-card::before{
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    background: var(--color-white);
+    position: absolute;
+    left: 0.2rem;
+    top: -0.2rem;
+    transform: rotate(20deg);
+}
+
+.profile-option-list{
+    line-height: 2rem;
+}
+
+.profile-option-list li:hover{
+    opacity: 0.8;
+    color: var(--color-primary);
+}
+
+
 /* NOTIFICATION POPUP */
 
 .left .notofications-popup{
@@ -895,6 +931,12 @@ main .container .right{
 
 .story-head .first{
     color: var(--color-primary);
+}
+
+.add-to-story{
+    font-size: 25rem;
+    position: absolute;
+    top: 10%;
 }
 
 /* =================== SEARCH FRIEND ========================= */
